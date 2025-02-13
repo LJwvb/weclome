@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="left_container">
+        <div class="left_container_wrapper">
+          <div class="logo_container">
+            <div class="logo_wrapper">
+              <img src="./images/logo.svg" alt="logo" class="logo" />
+            </div>
+          </div>
+          <!-- 内容由JS动态加载 -->
+          <ul class="main_buttons"></ul>
+        </div>
+      </div>
+      <div class="middle_container">
+        <div class="right_head">
+          <div class="m_input search_input">
+            <header class="input_prefix">
+              <img src="./images/search.svg" alt="search" class="search_icon" />
+            </header>
+            <section class="input_inputbox">
+              <input type="text" spellcheck="false" placeholder="搜索文件..." />
+            </section>
+            <footer class="m-input__suffix"></footer>
+          </div>
+          <div class="user_info">
+            <div class="user_avatar">
+              <img src="./images/logo.svg" alt="avatar" class="avatar" />
+            </div>
+            <!-- 下拉菜单 -->
+            <div class="dropdown-menu hidden">
+              <ul>
+                <li>个人资料</li>
+                <li>设置</li>
+                <li>退出</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="right_body">
+          <!-- 初始显示内容由 JS 动态加载 -->
+        </div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
